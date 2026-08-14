@@ -1,0 +1,19 @@
+interface:
+  display_name: Anonimizator Datos
+  short_description: Anonimiza documentos sin que el chat los lea
+  default_prompt: Use $anonimizator-datos to anonymize a sensitive document through
+    the connector without opening or reading its contents in the chat.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+dependencies:
+  tools:
+  - type: mcp
+    value: anonimizator
+    description: Anonimizator MCP connector for anonymizing sensitive data
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
